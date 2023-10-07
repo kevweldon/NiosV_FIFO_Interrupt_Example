@@ -3,14 +3,6 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate /top_tb/dut/clk
 add wave -noupdate /top_tb/dut/reset
 add wave -noupdate /top_tb/dut/issp_reset_wire
-add wave -noupdate /top_tb/dut/ninit_done
-add wave -noupdate -expand -group FIFO_WRITE /top_tb/dut/sys/fifo_0/wrclock
-add wave -noupdate -expand -group FIFO_WRITE /top_tb/dut/sys/fifo_0/reset_n
-add wave -noupdate -expand -group FIFO_WRITE /top_tb/dut/sys/fifo_0/avalonmm_write_slave_waitrequest
-add wave -noupdate -expand -group FIFO_WRITE /top_tb/dut/sys/fifo_0/avalonmm_write_slave_write
-add wave -noupdate -expand -group FIFO_WRITE /top_tb/dut/sys/fifo_0/avalonmm_write_slave_writedata
-add wave -noupdate -expand -group FIFO_READ /top_tb/dut/sys/fifo_0/avalonmm_read_slave_read
-add wave -noupdate -expand -group FIFO_READ /top_tb/dut/sys/fifo_0/avalonmm_read_slave_readdata
 add wave -noupdate -expand -group CSR_RAM /top_tb/dut/sys/csr_ram/clk
 add wave -noupdate -expand -group CSR_RAM /top_tb/dut/sys/csr_ram/clken
 add wave -noupdate -expand -group CSR_RAM /top_tb/dut/sys/csr_ram/address

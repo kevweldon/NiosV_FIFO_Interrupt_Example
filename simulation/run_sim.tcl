@@ -33,7 +33,7 @@ com
 # Compile project source code #
 ###############################
 vlog -incr -sv ./${TOP_LEVEL_NAME}.sv -L altera_common_sv_packages
-vlog -incr -sv ../src/top.sv
+vlog -incr -sv ../top.sv
 
 # Quit without asking
 set PrefMain(forceQuit) 1

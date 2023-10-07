@@ -1,4 +1,4 @@
-`define AMM_BFM top_tb.dut.sys.mm_master_bfm_0.mm_master_bfm_0
+`define AMM_BFM top_tb.dut.sys.mm_master_bfm.sys_mm_master_bfm
 
 `define NUM_OF_PACKETS_TO_SEND 2
 `define PACKET_SIZE 4
@@ -36,11 +36,9 @@ module top_tb;
 	`AMM_BFM.init();
 
 	force dut.sys.jtag_master.master_reset_reset=1;
-	force dut.ninit_done = 1;
 	force dut.issp_reset_wire = 1;
 	repeat (20) @(posedge clk);
 	force dut.sys.jtag_master.master_reset_reset=0;
-	force dut.ninit_done = 0;
 	force dut.issp_reset_wire = 0;
 	repeat (20) @(posedge clk);
 

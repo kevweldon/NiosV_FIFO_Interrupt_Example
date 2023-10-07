@@ -57,7 +57,7 @@ update:
 	make reset_and_start
 
 restore :
-	quartus_sh --restore top_23_2_0_94.qar
+	quartus_sh --restore top_23_3_0_104.qar
 
 clean :
 
